@@ -1,0 +1,1 @@
+This little project demonstrates how stdin and stdout can be used to transfer JSON requests and responses between two processes
