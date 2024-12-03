@@ -14,7 +14,7 @@ for command in commands:
     print("<", command)
     process.stdin.write((json.dumps(command) + "\n").encode())
     process.stdin.flush()
-    output = json.loads(process.stdout.readline().decode())
+    output = json.loads(process.stdout.readline())
     print(">", output)
 
 process.stdin.close()
